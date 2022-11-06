@@ -19,14 +19,35 @@
 </head>
 
 <body>
-<header class="header d-flex align-items-center">
+    <nav class="navbar navbar-default navbar-fixed-top sticky-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">hello.</a>
+            </div>
+            <ul id="menu" class="nav navbar-nav navbar-right">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#other">TBD</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="jumbotron home" id="home">
+        <div class="container">
+            <h1 class="display-4">Me</h1>
+            <p class="lead">Web Developer or something like that</p>
+        </div>
+    </header>
+
+<!-- <header class="header d-flex align-items-center">
     <div class="container-fluid d-flex align-items-center justify-content-between">
-        <nav class="navbar fixed-top">
+        <nav class="navbar fixed-top bg-transparent">
             <div class="container-fluid">
-                <div class="navbar-header">
+                <div class="navbar-header sticky-top">
                     <a class="navbar-brand" href="#">hello.</a>
                 </div>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="menu">
                     <li class="nav-item"><a href="#home">Home</a></li>
                     <li class="nav-item"><a href="#about-me">About Me</a></li>
                     <li class="nav-item"><a href="#projects">Projects</a></li>
@@ -43,9 +64,9 @@
     </div>
 
 
-</header>
+</header> -->
 
-<div class="jumbotron home" id="home">
+<!-- <div class="jumbotron home" id="home">
     <div class="container">
         <div class="row justify-content-center">
             <div class="text-center">
@@ -54,12 +75,12 @@
             </div>
         </div>
     </div>
-  </div>
+  </div> -->
 
   <section id="about-me">
     <div class="container-fluid">
         <div class="media">
-            <img class="pull-left" src="https://via.placeholder.com/250" alt="Generic placeholder image">
+            <img id="headshot" class="pull-left" src="./images/Tessa.headshot.jpeg" alt="Generic placeholder image">
             <div class="media-body">
               <h1 class="media-heading">Hi, My Name is Tessa</h5>
               What suppp shawtys im tessa imma software engineer please hire me. cmon i worked so hard on this adorable little portfolio i swear it'll be worth it #women in stem.
@@ -133,13 +154,56 @@
     </div>    
   </section>
 
-  <section id="contact">
-    <div class="container-fluid">
-        <h1 class="display-4">Contact Me</h1>
-        <p class="lead">contact form </p>
-    </div>    
-  </section>
+<section id="contact">
+  <div class="container">
+    <div class=" text-center mt-5 ">
+        <h1>Contact Me!</h1>
+    </div>
+    <div class="row ">
+    <div class="col-lg-7 mx-auto">
+        <div class="card mt-2 mx-auto p-4 bg-light">
+            <div class="card-body bg-light">
+    
+                <div class = "container">
+                    <form id="contact-form" role="form">
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name"> Name *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name" required="required" data-error="Firstname is required.">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                                    </div>
+                                </div>
+                            </div>   
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-primary btn-send  pt-2 btn-block
+                                        " value="Send Message">
+                                </div>
+                            </div>
+                        </div>               
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>                
+</section>
 
+
+
+<script src="./assets/script.js"></script>
 
 </body>
 </html>

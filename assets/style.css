@@ -1,19 +1,31 @@
 header {
-    background-color: black;
+    background-color: transparent;
 }
 
 .navbar {
     margin-bottom: 0;
 }
 
+
 a {
     text-decoration: none;
     color: grey;
 }
 
-.home {
+.jumbotron {
+    height: 100vh;
+    background-color: transparent;
+}
+
+section {
     height: 100vh;
 }
+
+#headshot {
+    height: 250px;
+}
+
+
 .border-dark {
     border: 1px solid black;
 }
