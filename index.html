@@ -1,209 +1,157 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    
-    <link rel="stylesheet" href="./assets/style.css">
-
-	<title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/3fa854029c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="public/style.css" />
+    <title>My Portfolio</title>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top sticky-top">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">hello.</a>
-            </div>
-            <ul id="menu" class="nav navbar-nav navbar-right">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Work</a></li>
-                <li><a href="#other">TBD</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-sm   navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tessa Starkweather <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-section">About Me</a>
+                </li>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work-section">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Contact</a>
+                </li>
+
             </ul>
+            <div class="social-part">
+                <a href="https://www.linkedin.com/in/tessa-starkweather-b61941200/"><i class="fa fa-linkedin"
+                        aria-hidden="true"></i></a>
+                <a href="https://github.com/t-starkw"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/tessa.starkweather/"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+            </div>
         </div>
     </nav>
-    <header class="jumbotron home" id="home">
-        <div class="container">
-            <h1 class="display-4">Me</h1>
-            <p class="lead">Web Developer or something like that</p>
-        </div>
-    </header>
 
-<!-- <header class="header d-flex align-items-center">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-        <nav class="navbar fixed-top bg-transparent">
-            <div class="container-fluid">
-                <div class="navbar-header sticky-top">
-                    <a class="navbar-brand" href="#">hello.</a>
-                </div>
-                <ul class="nav navbar-nav" id="menu">
-                    <li class="nav-item"><a href="#home">Home</a></li>
-                    <li class="nav-item"><a href="#about-me">About Me</a></li>
-                    <li class="nav-item"><a href="#projects">Projects</a></li>
-                    <li class="nav-item"><a href="#other">Other</a></li>
-                    <li class="nav-item nav-link active"><a href="#contact">Contact Me</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://github.com/t-starkw"><i class="fa-brands fa-github fa-xl fa-fw"></i></span></a></li>
-                    <li><a href="https://www.linkedin.com/in/tessa-starkweather-b61941200/"><i class="fa-brands fa-linkedin fa-xl fa-fw"></i></span></a></li>
-                    <li><a href="mailto: tess.starkweather@gmail.com"><i class="fa-solid fa-envelope fa-xl fa-fw"></i></span></a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-
-</header> -->
-
-<!-- <div class="jumbotron home" id="home">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="text-center">
-                <h1 class="display-4">my portfolio</h1>
-                <p class="lead">wip but i promise youll luv it</p>
-            </div>
-        </div>
-    </div>
-  </div> -->
-
-  <section id="about-me">
-    <div class="container-fluid">
-        <div class="media">
-            <img id="headshot" class="pull-left" src="./images/Tessa.headshot.jpeg" alt="Generic placeholder image">
-            <div class="media-body">
-              <h1 class="media-heading">Hi, My Name is Tessa</h5>
-              What suppp shawtys im tessa imma software engineer please hire me. cmon i worked so hard on this adorable little portfolio i swear it'll be worth it #women in stem.
-            </div>
-          </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="container-fluid">
-        <h1 class="display-4">Projects</h1>
-        <p class="lead">here are my projects woohoo</p>
-    </div> 
-    <div class="container">
-        <div class="card-deck">
+    <section id="about-section" class="pt-5 pb-5">
+        <div class="container wrapabout">
+            <div class="red"></div>
             <div class="row">
-                <div class="col-sm-3">
-                    <div class="card border-dark text-center" id="project1" style="width:200px">
-                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image">
-                        <div class="card-body">
-                          <h4 class="card-title">Project Title</h4>
-                          <p class="card-text">Some example text.</p>
-                          <a href="#" class="btn btn-primary">App Link</a>
-                          <a href="#" class="btn btn-primary">Repo Link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                <div class="card border-dark text-center" id="project2" style="width:200px">
-                    <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">Project Title</h4>
-                      <p class="card-text">Some example text.</p>
-                      <a href="#" class="btn btn-primary">App Link</a>
-                      <a href="#" class="btn btn-primary">Repo Link</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                    <div class="card border-dark text-center" id="project3" style="width:200px">
-                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image">
-                        <div class="card-body">
-                          <h4 class="card-title">Project Title</h4>
-                          <p class="card-text">Some example text.</p>
-                          <a href="#" class="btn btn-primary">App Link</a>
-                          <a href="#" class="btn btn-primary">Repo Link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card border-dark text-center" id="project4" style="width:200px">
-                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image">
-                        <div class="card-body">
-                          <h4 class="card-title">Project Title</h4>
-                          <p class="card-text">Some example text.</p>
-                          <a href="#" class="btn btn-primary">App Link</a>
-                          <a href="#" class="btn btn-primary">Repo Link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>   
-  </section>
-
-  <section id="other">
-    <div class="container-fluid">
-        <h1 class="display-4">Other</h1>
-        <p class="lead">maybe blog or API work that shows u how could i could be at this job even though i am strggling to build this webpage rn hahahah</p>
-    </div>    
-  </section>
-
-<section id="contact">
-  <div class="container">
-    <div class=" text-center mt-5 ">
-        <h1>Contact Me!</h1>
-    </div>
-    <div class="row ">
-    <div class="col-lg-7 mx-auto">
-        <div class="card mt-2 mx-auto p-4 bg-light">
-            <div class="card-body bg-light">
-    
-                <div class = "container">
-                    <form id="contact-form" role="form">
-                        <div class="controls">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_name"> Name *</label>
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name" required="required" data-error="Firstname is required.">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_email">Email *</label>
-                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
-                                    </div>
-                                </div>
-                            </div>   
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="form_message">Message *</label>
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="submit" class="btn btn-primary btn-send  pt-2 btn-block
-                                        " value="Send Message">
-                                </div>
+                <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
+                    <div class="blockabout">
+                        <div class="blockabout-inner text-center text-sm-start">
+                            <div class="title-big pb-3 mb-3">
+                                <h3>ABOUT ME</h3>
                             </div>
-                        </div>               
-                    </form>
+                            <p class="description-p text-muted pe-0 pe-lg-0">
+                                Hi, my name is Tessa.
+                            </p>
+                            <p class="description-p text-muted pe-0 pe-lg-0"> I am a recent graduate from UNC Chapel
+                                Hill with a Bachelor of Science in Biology. I am currently employed as an air quality
+                                analyst, but my
+                                newly discovered passion for computer science has led me to UNC's Coding Bootcamp.</p>
+                            <div class="sosmed-horizontal pt-3 pb-3">
+                                <a href="https://www.linkedin.com/in/tessa-starkweather-b61941200/"><i
+                                        class="fa fa-linkedin"></i></a>
+                                <a href="https://github.com/t-starkw"><i class="fa fa-github"></i></a>
+                                <a href="https://www.instagram.com/tessa.starkweather/"><i
+                                        class="fa fa-instagram"></i></a>
+                            </div>
+                            <a href="#" class="btn rey-btn mt-3">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <figure class="potoaboutwrap">
+                        <img src="https://via.placeholder.com/400x700?text=img+of+me" alt="potoabout" />
+                    </figure>
                 </div>
             </div>
         </div>
-    </div>                
-</section>
-
-
-
-<script src="./assets/script.js"></script>
-
+    </section>
+    <section id="work-section">
+        <div class="card blockabout">
+            <div class="card-body blockabout-inner">
+                <h1>My Work</h1>
+                <p>Check out my latest projects!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card blockabout">
+                    <img class="card-img-top" src="public/img/recipe.jpg" alt="Card image cap">
+                    <div class="card-body blockabout-inner">
+                        <h5 class="card-title">Hungry</h5>
+                        <p class="card-text">An API-based recipe locating application that renders randomized food and
+                            cocktail recommendations for users given input preferences.</p>
+                        <a href="https://github.com/t-starkw/diy-happy-hour" class="btn btn-primary">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card blockabout">
+                    <img class="card-img-top" src="public/img/books.jpg" alt="Card image cap">
+                    <div class="card-body blockabout-inner">
+                        <h5 class="card-title">LibScrib</h5>
+                        <p class="card-text">A GoodReads-Reddit hybrid for book lovers. Allows users to create an
+                            account, as well as post and view book reviews.</p>
+                        <a href="https://github.com/smfitz/Project-2-restAPI-group-4" class="btn btn-primary">GitHub
+                            Repo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card blockabout">
+                    <img class="card-img-top" src="public/img/team1.jpg" alt="Card image cap">
+                    <div class="card-body blockabout-inner">
+                        <h5 class="card-title">CLI Employee Management Portal</h5>
+                        <p class="card-text">A command line employee tracker system allowing users to track team
+                            members, positions and salaries.</p>
+                        <a href="#" class="btn btn-primary">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-section">
+        <div class="form-box">
+            <h1>Let's Connect</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" id="name" type="text" name="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" id="email" type="email" name="Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="Message"></textarea>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Submit" />
+        </div>
+        </form>
+    </section>
 </body>
+
 </html>
